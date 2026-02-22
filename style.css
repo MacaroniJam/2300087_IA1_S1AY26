@@ -1,0 +1,323 @@
+@font-face {
+    font-family: NeueHaasDisplayMedium;
+    src: url(Assets/Fonts/NeueHaasDisplayMedium.ttf);
+}
+
+@font-face {
+    font-family: NeueHaasDisplayRoman;
+    src: url(Assets/Fonts/NeueHaasDisplayRoman.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F1FAEE;
+}
+header{
+    background-color:#1D3557;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+
+    z-index: 100;
+
+}
+
+header h1{
+    font-size: 25px;
+}
+
+nav{
+    display: flex;
+    height: 100%;
+
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    padding: 0px 10px;
+    height: 100%;
+    transition: 0.3s;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    font-weight: bold;
+    background-color: #E63946;
+}
+
+
+
+.h1-border{
+    background-color: #457B9D;
+
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+
+.professional, .personality, .personal-development, .storyboard{
+    scroll-margin-top: 65px;
+    margin-top:65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+
+
+.profile-picture {
+    border-radius: 50%;
+}
+
+.statements {
+    display: flex;
+    flex: 1;
+    width:100%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.statements div{
+    width: 40%;
+    background-color: #1D3557;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.statements h2{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.statements h2, .statements p{
+    color: white;
+}
+
+.hobbies, .pillars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+    padding-bottom: 20px;
+    width: 100%;
+   
+}
+
+.hobby, .pillar{
+    background-color: #A8DADC;
+    text-align: left;
+    color: black;
+    padding: 20px;
+    width: 97%;
+    box-sizing: border-box;
+    
+
+    border-radius: 20px;
+}
+
+.hobby p, .pillar p, .hobby h3, .pillar h3{
+    padding: 0px 20px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 20px;
+}
+
+.card{
+    background-color: #1D3557;
+    text-align: left;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    width: 300px; 
+}
+.card img{
+    display: block;
+    margin: 40px auto 0 auto; 
+    border-radius: 10px;
+    width: 100%;       
+    height: 400px;
+    margin-bottom: 20px;      
+}
+
+@media only screen and (max-width: 768px){
+    .card {
+        display: flex;
+        width: 95%;
+        border-radius: 0px;
+    }
+
+    .card img {
+        order: -1;
+        width: 200px;
+        height: 250px;
+        margin-top: 20px;
+        margin-right: 20px;
+
+    }
+
+    .card-text {
+        text-align: left;
+    }
+    
+
+}
+
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    margin-top: 70px;
+    padding-bottom: 20px;
+    background-color: #457B9D;
+    width: 97%;
+}
+
+.quote{
+    background-color: #A8DADC;
+    display: flex;
+    flex-direction: row;
+    
+    color: black;
+    padding: 20px;
+    width: 97%;
+
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.quote div{
+    text-align: left;
+    margin-left: 30px;
+ 
+    
+}
+
+
+.quote img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+
+}
+
+.quote-background{
+    background-color: #1D3557;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    border-radius: 0px 0px 20px 20px;
+
+
+}
+
+.quote-background p{
+    color:white;
+    text-align: left;
+    padding: 0px 20px;
+}
+
+.AIBusiness {
+    display: flex;
+    flex-direction: column;
+    background-color: #A8DADC;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    color: black;
+
+    width: 97%;
+}
+
+.AIBusiness p{
+    text-align: left;
+    padding: 0px 40px;
+    margin-top: 0px;
+} 
+
+.AIBusiness h3{
+    text-align: left;
+    padding: 0px 40px;
+}
+
+.AIBusiness a{
+    font-weight: bold;
+}
+.AIBusiness a:link, .AIBusiness a:visited{
+    color: black;
+    text-decoration: underline;
+}
+
+.AIBusiness a:hover{
+    color: white;
+    background-color: #E63946;
+    text-decoration: underline;
+}
+
+
+
+
+.personal-development p{
+    text-align: left;
+}
+
+
+
+
+h1, h2{
+    font-family: NeueHaasDisplayMedium;
+}
+
+h1{
+    color:white; 
+    background-color: #E63946; 
+    display: inline-block; 
+    padding: 0px 20px;
+
+    font-weight: 900;
+    font-size: 36px;
+}
+
+h2{
+
+    font-weight: bold;
+    font-size: 32px;
+}
+
+h3{
+    font-family: NeueHaasDisplayRoman;
+    font-size: 24px;
+}
+
+
+p, li, a {
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+iframe{
+    margin-top:20px;
+    width: 80%;
+    height: 500px;
+}
